@@ -8,24 +8,19 @@
 <body>
 
     <div class="container">
-        <div id="nav">
-            <h1><a href="/">MY Web App</a></h1>
-            <ul>
-                <li><a href="/books">Books Page</a></li>
-                <li><a href="/books/new">New Book Form</a></li>
-            </ul>
-        </div>
-        <hr>
+    <div id="nav">
+        <h1><a href="/">MY Web App</a></h1>
+        <ul>
+            <li><a href="/books">Books Page</a></li>
+            <li><a href="/books/new">New Book Form</a></li>
+        </ul>
+    </div>
+    <hr>
 
-    <h1>My Books Page</h1>
 
-    <p>{{ message }}</p>
 
-    <ul>
-    {% for book in books %}
-        <li>{{ book["title"] }}</li>
-    {% endfor %}
-    </ul>
+    <h1>New Books Form</h1>
+
 
     <!-- FOOTER -->
     <div id="footer">
