@@ -1,6 +1,7 @@
 
 
-{% extends "layout.html" %}
+{% extends "bootstrap_layout.html" %}
+{% set active_page = "new_book" %}
 
 {% block content %}
 
@@ -11,7 +12,7 @@
     <form action="/books/create" method="POST">
 
         <label>Title:</label>
-        <input type="text" name="title" placeholder="Book XYZ" value="Book XYZ">
+        <input type="text" name="book_title" placeholder="Book XYZ" value="Book XYZ">
 
         <label>Author:</label>
         <select name="author_name">
@@ -21,5 +22,6 @@
         </select>
 
         <button>Submit</button>
+        
     </form>
 {% endblock %} 
