@@ -3,6 +3,10 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# ignore the .env file with our secret code:
+.env
+
+
 # C extensions
 *.so
 
