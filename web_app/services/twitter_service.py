@@ -44,4 +44,3 @@ print(type(status)) #> <class 'tweepy.models.Status'>
 print(status.id)
 print(status.full_text)
 
-breakpoint()
