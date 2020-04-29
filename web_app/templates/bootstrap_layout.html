@@ -28,7 +28,8 @@
     <!-- see: https://jinja.palletsprojects.com/en/2.11.x/tricks/ -->
     <!-- see: https://getbootstrap.com/docs/4.0/components/navbar/ -->
     {% set nav_links = [
-      ('/books', 'books', 'Books'),
+      ('/', 'prediction_form', 'Make a Prediction'),
+      ('/books', 'books', 'Books'),                      
       ('/books/new', 'new_book', 'New Book')
     ] -%}
     {% set active_page = active_page|default('index') -%}
