@@ -36,7 +36,7 @@ def fetch_user_data(screen_name):
     #
 
     #statuses = twitter_api.user_timeline(screen_name, tweet_mode="extended", count=35, exclude_replies=True, include_rts=False)
-    statuses = twitter_api.user_timeline(screen_name, tweet_mode="extended", count=150)
+    statuses = twitter_api.user_timeline(screen_name, tweet_mode="extended", count=50)
     print("STATUSES", len(statuses))
     #
     # fetch embedding for each tweet (will give us a list of lists)
