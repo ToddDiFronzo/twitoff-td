@@ -62,7 +62,7 @@ def fetch_user_data(screen_name):
         embedding = basilica_connection.embed_sentence(status.full_text, model="twitter") 
         #embedding = embeddings[counter]
         embedding = embeddings[index]
-        print(len(embedding))
+        #print(len(embedding))
         db_tweet.embedding = embedding
         db.session.add(db_tweet)
         #counter+=1

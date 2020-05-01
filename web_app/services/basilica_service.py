@@ -20,8 +20,8 @@ def basilica_api_client():
 
 if __name__ == "__main__":
 
-    embedding = connection.embed_sentence("hey this is a cool tweet", model='twitter')
-    print(embedding)
+    #embedding = connection.embed_sentence("hey this is a cool tweet", model='twitter')
+    #print(embedding)
     # > a list of 768 numbers
 
     tweets = [ "Hello world", "artificial intelligence", "another tweet here #cool"]
@@ -29,4 +29,3 @@ if __name__ == "__main__":
     for embed in embeddings:
         print("-----")
         print(len(embed))
-
